@@ -1,0 +1,16 @@
+{
+  "name": "tong_fe_proj",
+  "version": "1.0.0",
+  "description": "front end project for tong.qq.com",
+  "main": "buildconfig.js",
+  "devDependencies": {
+    "csso": "^3.0.1",
+    "gulp": "^3.9.1",
+    "requirejs": "^2.3.3"
+  },
+  "scripts": {
+    "build": "node r.js -o buildconfig.js"
+  },
+  "author": "horstxu",
+  "license": "ISC"
+}
