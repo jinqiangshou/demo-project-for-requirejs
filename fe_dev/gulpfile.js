@@ -19,8 +19,11 @@ var buildConfig = {
   },
   optimizeCss: "standard",
   removeCombined: true,
-  fileExclusionRegExp: /^(node_modules|package.json|gulpfile.js)$/,
-  writeBuildTxt: false
+  fileExclusionRegExp: /^(node_modules|gulpfile.js)|(\.json$)/,
+  writeBuildTxt: false,
+  // generate sourceMap for debugging
+  generateSourceMaps: true,
+  preserveLicenseComments: false
 };
 
 gulp.task('build', function(cb){
